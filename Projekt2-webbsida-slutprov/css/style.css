@@ -1,0 +1,592 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* MY CODE */
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+main{
+    padding-top:100px;
+}
+header{
+    background-color:lightgrey;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100px;
+}
+header .header-main{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:24px;
+    color:#111;
+    font-weight: 900;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    padding:15px 0;
+}
+header nav ul{
+    display:inline-block;
+    margin:0 auto;
+    width:fit-content !important;
+}
+header nav ul li{
+    display:inline-block;
+    float:left;
+    padding:0 20px;
+    width:calc(100%-40px);
+}
+header nav ul li a{
+    font-family: 'Cormorant Garamond', serif;
+    font-size:20px;
+    color:#111;
+    font-weight:500;
+    text-transform: uppercase;
+}
+a:hover, a:active {
+  background-color:lightblue;
+  border-radius: 5px;
+  font-weight:900;
+ }
+header .header-services{
+    display:none;
+}
+
+/* main section */
+.body-section{
+    width:100%;
+    height:50vh;
+    background-image: url( /img/desktop2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display:flex;
+}
+.body-section .container-1{
+    justify-content: center;
+    align-items: center;
+}
+.body-section h1{
+    text-transform:uppercase;
+    text-align:center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size:32px;
+    color:#111;
+    font-weight:700px;
+    line-height: 50px;
+    text-shadow: 2px 2px 8px white;
+    padding-top:10px;
+}
+.body-section h2{
+    
+    text-align:center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size:24px;
+    color:#111;
+    font-weight:200px;
+    line-height:25px;
+    text-shadow: 2px 2px 8px white;
+    font-style: italic;
+    margin-top:30px;
+}
+
+.body-section2 div{
+    margin:10px;
+    width:calc(100%-20px);
+    text-align:center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size:18px;
+    color:#111;
+    font-weight:500;
+    background-color:lightgray;
+}
+.section2-box1{
+    height:100px;
+    margin:5px;
+    width:calc(100%-20px);
+    text-align:center; 
+    line-height: 100px;  
+}
+
+/* footer section */
+footer{
+    width:calc(100%-40px);
+    padding:20px 20px;
+    background-color:black;
+    margin-top: 10px;
+    overflow: hidden;  
+}
+footer ul{
+    width:fit-content;
+    float:left;
+    padding-left:20px;
+}
+footer ul li{
+   display:block;
+   list-style: none;
+   font-family:'Cormorant Garamond', serif;
+   color:whitesmoke;
+
+}
+footer ul li a{
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    color:whitesmoke;
+    line-height:30px;
+}
+.footer-section2{
+    display:none;
+}
+.footer-logo{
+    width:40px;
+    float:right;
+}
+.footer-logo i{
+    width:100%;
+    margin-bottom:10px;
+}
+/* desktop version */
+@media only screen and (min-width:1000px){
+    .wrapper{
+        width:1000px;
+        margin:0 auto;
+    }
+    header .header-main{
+        
+        margin:31px 0px;
+        text-align:left;
+        padding:0px 20px 0px 60px;
+        border-right:2px solid gray;
+        float:left;
+        line-height:38px;
+    }
+    header nav ul{
+        margin:20px 0;
+        float:left;
+        margin-left:20px;
+    }
+    
+    header nav ul li a{
+        line-height: 60px;
+    }
+    header .header-services{
+        display:block;
+        float:right;
+        font-size:24px;
+        margin: 40px 60px 0 0;
+        font-family: 'Cormorant Garamond', serif;
+        font-size:20px;
+        color:#111;
+        font-weight:500;
+        text-transform:uppercase;
+    }
+    .body-section{
+        width:100%;
+        height:450px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        
+    }
+    .body-section h2 {
+        font-family: italic;
+        font-weight:300;
+        margin:0 auto;
+    }
+    .body-section h1 {
+        line-height: 50px;
+        margin:0 auto;
+    }
+    .body-section2 
+    {
+        margin:1px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr; 
+        grid-gap:0.1rem;
+        grid-template-areas: "section2-box1 section2-box1 section2-box1"
+        "section2-box1 section2-box1 section2-box1";
+    
+    }
+    .footer-section2{
+        display:block;
+        margin-left:150px;
+        text-transform: uppercase;
+
+    }
+    footer ul li p{
+        font-family:'Cormorant Garamond', serif;
+        font-size:20px;
+        color:whitesmoke;
+        line-height: 30px;
+
+    }
+    /* services page tab */
+    .section-services-back{
+        background-color:rgba(212, 212, 170, 0.952);
+        width:1000px;
+        margin:0 auto;
+    }
+    #section-services{
+        font-size:24px;
+        width:120px;
+        height:65px;
+        margin-top:10px;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color: aquamarine;
+        font-weight:bold;
+        position:relative;
+        animation: mymove 5s infinite;
+
+    }
+    #section-services {animation-timing-function: ease-in-out;}
+    
+    .service-box{
+        margin:0 auto;
+        text-align:center;
+        font-size:24px;
+        padding-top:10px;
+        background-color:whitesmoke;
+        height:400px;
+        display:grid;
+        grid-gap:.2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "div div div"
+        "div div div";
+        width:1000px;
+    }
+    .service-box > div{  
+        border: 3px solid lightgray;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:lightcyan;
+    }
+    /* aboutus page tab */
+ .section-aboutus-back{
+    background-color:rgba(212, 212, 170, 0.952);
+    width:1000px;
+    margin:0 auto;
+   }
+  .section-aboutus-back p{
+    font-size:20px;
+    font-family:'Cormorant Garamond', serif;
+    line-height:25px;
+    background-color: aliceblue;
+    padding-top:10px;
+  }
+ #section-aboutus{
+    font-size:24px;
+    width:120px;
+    height:65px;
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: aquamarine;
+    font-weight:bold;
+    position:relative;
+    animation: mymove 5s infinite;
+  }
+ #section-aboutus {animation-timing-function: ease-in-out;}
+ @keyframes mymove {
+    from {left: 0px;}
+    to {left: 880px;}
+  }
+
+  /* Contact webpage */
+  .section-contact-back{
+    background-color:rgba(212, 212, 170, 0.952);
+    width:1000px;
+    margin:0 auto;
+ }
+ #section-contact{
+    font-size:24px;
+    width:120px;
+    height:65px;
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(59, 194, 235, 0.973);
+    font-weight:bold;
+    position:relative;
+    animation: mymove 5s infinite;
+ }
+ #section-contact {animation-timing-function: ease-in-out;
+ }
+ .contact-form{
+    border-radius:5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    
+ }
+ input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin:0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  } 
+}
+
+/* services page tab */
+
+/* .section-services-back{
+    background-color:rgba(212, 212, 170, 0.952);
+    width:100%;
+    margin:0 auto;
+}
+#section-services{
+    font-size:24px;
+    width:120px;
+    height:65px;
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: aquamarine;
+    font-weight:bold;
+    position:relative;
+    animation: mymove 5s infinite;
+}
+#section-services {animation-timing-function: ease-in-out;}
+
+.service-box{
+    margin:0 auto;
+    text-align:center;
+    font-size:24px;
+    padding-top:10px;
+    background-color:whitesmoke;
+    height:400px;
+    display:grid;
+    grid-gap:.2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "div div div"
+    "div div div";
+    width:1000px;
+}
+.service-box > div{  
+    border: 3px solid lightgray;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:lightcyan;
+} */ 
+@media only screen and (max-width:400px){
+/* aboutus page tab */
+.section-aboutus-back{
+    background-color: lightskyblue !important;
+    width:100%;
+    margin:0 auto;
+}
+.section-aboutus-back p{
+    font-size:20px;
+    font-family:'Cormorant Garamond', serif;
+    line-height:25px;
+    padding-top:20px;
+    background-color: lightgray;
+    text-align: center;
+    border-bottom:2px solid black;
+    
+}
+#section-aboutus{
+    font-size:24px;
+    width:120px;
+    height:65px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    position:relative;
+    animation: mymove 5s infinite;
+}
+#section-aboutus {animation-timing-function: ease-in-out;}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 250px;}
+  }
+
+  /* Contact webpage */
+  .section-contact-back{
+    background-color:lightgray;
+    width:100%;
+    margin:0 auto;
+}
+#section-contact{
+    font-size:24px;
+    width:120px;
+    height:65px;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    position:relative;
+    animation: mymove 5s infinite;
+}
+#section-contact {animation-timing-function: ease-in-out;
+}
+.contact-form{
+    border-radius:5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin:0 auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+}
